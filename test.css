@@ -1,0 +1,19 @@
+.card {
+    /* overflow-y: auto; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 77vh;
+    margin-top: 3px;
+    margin-bottom:3px;
+}
+
+.list-group.list-group-flush {
+    overflow-y: auto;
+}
+
+
+.list-group-item.Vert.hover-effect {
+    background-color: green;
+    }
+
+

@@ -93,14 +93,14 @@ function bindHoverEffects() {
         line.addEventListener('mouseenter', function() {
             
             // Get the current card containing this list-group-item
-            const currentCard = this.closest('.card');
+            const currentCard = this.closest('.list-group-flush');
             
             // Find the index of the hovered list-group-item within its card
             const lineId = this.id;
 
             console.log(lineId);
 
-            document.querySelectorAll('.card').forEach(function(card) {
+            document.querySelectorAll('.card .list-group-flush').forEach(function(card) {
                 const correspondingLine = card.querySelector(`.list-group-item[id="${lineId}"]`);
 
                 if (correspondingLine) {
@@ -110,14 +110,16 @@ function bindHoverEffects() {
 
 
                 // For each card other than the current card...
-                document.querySelectorAll('.card').forEach(function(card) {
+                document.querySelectorAll('.card .list-group-flush').forEach(function(card) {
                     // Check if it's not the current card to avoid scrolling the card you're interacting with
                     if (card === currentCard) return; // If it is the current card, do nothing (skip it)
                     
                     // Again, find the corresponding line by index in other cards
-                    const correspondingLine = card.querySelector(`.line[id="${lineId}"]`);
+                    const correspondingLine = card.querySelector(`.list-group-item[id="${lineId}"]`);
                     // If such a line exists in the other card...
                     if (correspondingLine) {
+
+                        console.log('Found matching line', correspondingLine);
                         // Calculate the scroll amount needed to center the line in the viewport
                         const targetLineTop = correspondingLine.offsetTop; // Distance from the top of the card to the line
                         const targetLineHeight = correspondingLine.offsetHeight; // The height of the line
