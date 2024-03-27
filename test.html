@@ -10,10 +10,11 @@
 <body> 
 
 
-    
+
  <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: salmon;">
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: salmon;">
     <div class="container-fluid">
+
         <a class="navbar-brand fw-bold" href="#">Translatoscope</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,46 +31,71 @@
             <a class="nav-link"> TEI </a>
             </li>
         </ul>
+
+        <div class="mx-auto p-1">
+            <img class="mx-2" src="logo_Litt&Arts.png" alt="Logo" style="height: 60px; ">
+            <img class="mx-2" src="logo_UGA.png" alt="Logo" style="height: 60px; ;">
+            <img class="mx-2" src="logo_France_2030.png" alt="Logo" style="height: 60px; ">
+            <img class="mx-2" src="logo_GRICAD.png" alt="Logo" style="height: 60px; ">
+
         </div>
+        
+        </div>
+
+        <!-- <div class="row">
+            <div class="d-flex">
+            <img src="logo_UGA.png" alt="Logo" style="height: 50px;">
+            <img src="logo_France_2030.png" alt="Logo" style="height: 50px;">
+        </div> -->
     </div>
 </nav>
 
  <!-- Container for the two buttons -->
 <div class="container-fluid mt-3">
     <div class="row">
-      <!-- Column for the first button -->
-      <div class="col-auto">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Ajouter un texte
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#" > Ploutos - Coulon </a></li>
-            <li><a class="dropdown-item" href="#">Option 2</a></li>
-          </ul>
-        </div>
-      </div>
-  
-      <!-- Column for the second button -->
-      <div class="col-auto">
-        <button id="toggle_right_button" class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Explication code couleur</button>
-        <!-- Offcanvas on the right side that allows body scrolling -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" data-bs-scroll="true" data-bs-backdrop="false">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel"> Explication code couleur </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
 
-      </div>
-    </div>
-      </div>
+        <div class="col-sm-10">
+            <!-- Column for the first button -->
+            <div class="row">
+
+                <div class="col-auto">
+                    <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ajouter un texte
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#" > Ploutos - Coulon </a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    </ul>
+                    </div>
+                </div>
+        
+                <!-- Column for the second button -->
+                <div class="col-auto">
+                    <button id="toggle_right_button" class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Code couleur</button>
+                    <!-- Offcanvas on the right side that allows body scrolling -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" data-bs-scroll="true" data-bs-backdrop="false">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel"> Explication code couleur </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            test
+        </div>
     </div>
   </div>
 
+
 <!-- Container for the cards -->
 <div class="container-fluid mt-3 t-3" style="border: 1px solid #ccc;">
-    <div class="row row-cards justify-content-start " style="overflow-x: auto; flex-wrap: nowrap;">
+    <div class="row row-cards justify-content-start mt-1 mb-1" style="overflow-x: auto; flex-wrap: nowrap;">
         <!-- First card column -->
         <div class="col-lg-3 col-md-4 col-sm-6 gx-1">
             <div class="card">
@@ -147,8 +173,11 @@
 </div>
 
 
-<div class="footer-fixed-bottom">
-</div>
+<!-- <div class="footer-fixed-bottom py-5 mt-5" style = "background-color: salmon;">
+    
+    <div class="container text-light text-center"> © 2023 Translatoscope</div>
+
+</div> -->
 
 <script src="test.js"> </script>
 
