@@ -1,6 +1,6 @@
 
 
-/* ============ BOUTON AJOUTER-TEXTE =========== */
+/* ==================================== BOUTON AJOUTER-TEXTE ==================================== */
 
 .dropdown {
     position: relative; /* Ensure dropdown is positioned to use z-index */ 
@@ -39,7 +39,12 @@ display: block;
     color: #fff;
   }
 
-/* ============ BOUTON CODE COULEUR =========== */
+
+/* ==================================== BOUTON CODE COULEUR ==================================== */
+
+.offcanvas-header {
+    border-bottom: 1px solid #ccc; /* You can adjust the color and thickness as needed */
+}
 
 .offcanvas-body {
     overflow-y: auto;
@@ -49,7 +54,7 @@ display: block;
     text-align: justify;
 }
 
-/* ============ BOUTONS +/- =========== */
+/* ==================================== BOUTONS +/- ==================================== */
 
 
 .custom-btn-size {
@@ -60,12 +65,12 @@ display: block;
 
 
 
-/* ============ CARDS =========== */
+/* ==================================== CARDS ==================================== */
 
 
 .card {
     border-radius: 5px;
-    height: 77vh;
+    height: 88vh;
 }
 
 
