@@ -20,74 +20,236 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"> Alignements </a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link"> Projet </a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link"> TEI </a>
-            </li>
-        </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> Alignements </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link"> Projet </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link"> TEI </a>
+                </li>
+            </ul>
 
-        <div class="mx-auto p-1">
-            <img class="mx-2" src="logo_Litt&Arts.png" alt="Logo" style="height: 60px; ">
-            <img class="mx-2" src="logo_UGA.png" alt="Logo" style="height: 60px; ;">
-            <img class="mx-2" src="logo_France_2030.png" alt="Logo" style="height: 60px; ">
-            <img class="mx-2" src="logo_GRICAD.png" alt="Logo" style="height: 60px; ">
-
-        </div>
+            <div class="mx-auto p-1">
+                <img class="mx-2" src="logo_Litt&Arts.png" alt="Logo" style="height: 60px; ">
+                <img class="mx-2" src="logo_UGA.png" alt="Logo" style="height: 60px; ;">
+                <img class="mx-2" src="logo_France_2030.png" alt="Logo" style="height: 60px; ">
+                <img class="mx-2" src="logo_GRICAD.png" alt="Logo" style="height: 60px; ">
+            </div>
         
         </div>
-
-        <!-- <div class="row">
-            <div class="d-flex">
-            <img src="logo_UGA.png" alt="Logo" style="height: 50px;">
-            <img src="logo_France_2030.png" alt="Logo" style="height: 50px;">
-        </div> -->
     </div>
 </nav>
 
- <!-- Container for the two buttons -->
+ <!-- Container for the 4 buttons -->
 <div class="container-fluid mt-3">
     <div class="row">
 
-        <div class="col-sm-10">
-            <!-- Column for the first button -->
+        <div class="col-10">
+            <!-- Column for the dropdown -->
             <div class="row">
 
                 <div class="col-auto">
-                    <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Ajouter un texte
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#" > Ploutos - Coulon </a></li>
-                        <li><a class="dropdown-item" href="#">Option 2</a></li>
-                    </ul>
-                    </div>
+                    <div id="dropdown_button">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Choisir texte
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                            <li class="dropdown-submenu dropdown-item dropdown-toggle"> 
+                              Les Archanéens
+                              <ul class="dropdown-menu">
+                                <li onclick="addNewCard()" class="dropdown-item">Coulon</li>
+                              </ul>
+                            </li>
+                    
+                            <li class="dropdown-submenu dropdown-item dropdown-toggle"> 
+                              Ploutos
+                              <ul class="dropdown-menu">
+                                <li onclick="addNewTab('Coulon - Plutus')" class="dropdown-item">Coulon</li>
+                                <li onclick="addNewTab('Alfonsi')" class="dropdown-item">Alfonsi</li>
+                                <li onclick="addNewTab('Anonyme (Ingolstadt) - Ploutos')" class="dropdown-item">Anonyme (Ingolstadt)</li>
+                                <li onclick="addNewTab('Brumoy')" class="dropdown-item">Brumoy</li>
+                                <li onclick="addNewTab('Debidour')" class="dropdown-item">Debidour</li>
+                                <li onclick="addNewTab('Fallex')" class="dropdown-item">Fallex</li>
+                                <li onclick="addNewTab('Fleury')" class="dropdown-item">Fleury</li>
+                                <li onclick="addNewTab('Ludovico di Poppi - Ploutos')" class="dropdown-item">Ludovico di Poppi</li>
+                                <li onclick="addNewTab('Thiercy')" class="dropdown-item">Thiercy</li>
+                                <li onclick="addNewTab('VanDaele')" class="dropdown-item">VanDaele</li>
+                                <li onclick="addNewTab('Willems')" class="dropdown-item">Willems</li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu dropdown-item dropdown-toggle"> 
+                              Les Archarniens
+                              <ul class="dropdown-menu">
+                                <li onclick="addNewTab('Coulon - Les Acharniens')" class="dropdown-item">Coulon</li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu dropdown-item dropdown-toggle"> 
+                              Les Oiseaux
+                              <ul class="dropdown-menu">
+                                <li onclick="addNewTab('Coulon - Les Oiseaux')" class="dropdown-item">Coulon</li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu dropdown-item dropdown-toggle"> 
+                              Les Cavaliers
+                              <ul class="dropdown-menu">
+                                <li onclick="addNewTab('Coulon - Les Cavaliers')" class="dropdown-item">Coulon</li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu dropdown-item dropdown-toggle"> 
+                              Lysistrata
+                              <ul class="dropdown-menu">
+                                <li onclick="addNewTab('Coulon - Lysistrata')" class="dropdown-item">Coulon</li>
+                              </ul>
+                            </li>
+                            <li value="Something else here" class="dropdown-item" >Autres pièces</li>
+                          </ul>
+                        </div>
+                      </div> 
+
+
                 </div>
         
-                <!-- Column for the second button -->
+                <!-- Column for code couleur -->
                 <div class="col-auto">
                     <button id="toggle_right_button" class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Code couleur</button>
                     <!-- Offcanvas on the right side that allows body scrolling -->
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" data-bs-scroll="true" data-bs-backdrop="false">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel"> Explication code couleur </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                </div>
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel"> Explication code couleur </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
 
+                        <div class="offcanvas-body">
+
+                            <div class="container row text-center">
+                                <div class="col-4">
+                                    <h5>Gris</h5>
+                                </div>
+                                <div class="col-6" style="background-color: gray">
+                                </div>
+                            </div>
+
+                            <div class="container row">
+                                <div class="col-12 mt-3 text-justify">
+                                    <p> Rien à signaler. Même locuteur et même texte dans l'original (Coulon) et dans la traduction </p>
+                                    
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="container row text-center">
+                                <div class="col-4">
+                                    <h5> Orange </h5>
+                                </div>
+                                <div class="col-4" style="background-color: orange">
+                                </div>
+                            </div>
+                    
+                            <div class="container row text-justify">
+                                <div class="col-12 mt-3">
+                                    Même texte prononcé par des locuteurs différents
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="container row text-center">
+                                <div class="col-4">
+                                    <h5> Violet </h5>
+                                </div>
+                                <div class="col-4" style="background-color: purple">
+                                </div>
+                            </div>
+                        
+                            <div class="container row">
+                                <div class="col-12 mt-3 text-justify">
+                                    Une même réplique dans l'original (Coulon) est prononcé par plusieurs locuteurs dans la traduction
+                                </div>
+                            </div> 
+
+                            <hr>
+
+                            <div class="container row text-center">
+                                <div class="col-4">
+                                    <h5> Bleu </h5>
+                                </div>
+                                <div class="col-4" style="background-color: blue">
+                                </div>
+                            </div>
+                        
+                            <div class="container row ">
+                                <div class="col-12 mt-3 text-justify">
+                                    Plusieurs répliques à la suite dans l'original (Coulon) sont prononcees par un seul locuteur dans la traduction
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="container row text-center">
+                                <div class="col-4">
+                                    <h5> Rose </h5>
+                                </div>
+                                <div class="col-4" style="background-color: pink">
+                                </div>
+                            </div>
+                        
+                            <div class="container row ">
+                                <div class="col-12 mt-3 text-justify">
+                                    Ajout d'une réplique dans la traduction 
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="container row text-center">
+                                <div class="col-4">
+                                    <h5> Noir </h5>
+                                </div>
+                                <div class="col-4" style="background-color: black">
+                                </div>
+                            </div>
+                        
+                            <div class="container row ">
+                                <div class="col-12 mt-3 text-justify">
+                                    Suppression d'une réplique dans la traduction
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="container row text-center">
+                                <div class="col-4">
+                                    <h5> Marron </h5>
+                                </div>
+                                <div class="col-4" style="background-color: brown">
+                                </div>
+                            </div>
+
+                            <div class="container row ">
+                                <div class="col-12 mt-3 text-justify">
+                                    Changement dans l'ordre des répliques
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
-        <div class="col-auto">
-            test
+        <div class="col">
+            <div class="row">
+                <div class="col-4">
+                    <button type="button" id="btn_choose_language" class="btn btn-secondary btn-sm custom-btn-size increase-font"> + </button>
+                </div>
+                <div class="col-4">
+                    <button type="button" id="btn_choose_language" class="btn btn-secondary btn-sm custom-btn-size decrease-font"> - </button>
+                </div>
+          </div>
         </div>
     </div>
   </div>
@@ -95,6 +257,7 @@
 
 <!-- Container for the cards -->
 <div class="container-fluid mt-3 t-3" style="border: 1px solid #ccc;">
+<!-- <div class="container-fluid mt-3 t-3"> -->
     <div class="row row-cards justify-content-start mt-1 mb-1" style="overflow-x: auto; flex-wrap: nowrap;">
         <!-- First card column -->
         <div class="col-lg-3 col-md-4 col-sm-6 gx-1">
@@ -145,30 +308,7 @@
                 </ul>
             </div>
         </div>
-        <!-- Third card column -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gx-1">
-            <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title">Title</h5>
-                    <button type="button" class="btn-close" aria-label="Close"></button>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> <h5> Carion </h5> Ως ἀργαλέον πρᾶγμ\' ἐστίν, ὦ Ζεῦ καὶ θεοί, πρᾶγμ\' ἐστίν, ὦ Ζεῦ καὶ  <br>εῦ καὶ </li>  
-                </ul>
-            </div>
-        </div>
-        <!-- Fourth card column -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gx-1">
-            <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title">Title</h5>
-                    <button type="button" class="btn-close" aria-label="Close"></button>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> <h5> Carion </h5> Ως ἀργαλέον πρᾶγμ\' ἐστίν, ὦ Ζεῦ καὶ θεοί, πρᾶγμ\' ἐστίν, ὦ Ζεῦ καὶ  <br>εῦ καὶ </li>  
-                </ul>
-            </div>
-        </div>
+
     </div>
 </div>
 

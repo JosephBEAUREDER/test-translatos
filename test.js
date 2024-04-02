@@ -68,6 +68,8 @@ function addNewCard() {
     
 // ----------------- CLOSE BUTTON ----------------- //
 
+
+
     // Select the close button of the newly created card
     const closeButton = newCard.querySelector('.btn-close');
 
@@ -85,6 +87,7 @@ function addNewCard() {
 
 
 // ----------------- BIND HOVER-EFFECT ----------------- //
+
 function bindHoverEffects() {
     // Attach event listeners to all list-group-item elements within all cards
     document.querySelectorAll('.card .list-group-item').forEach(function(line) {
@@ -143,15 +146,10 @@ function bindHoverEffects() {
 
 
 
-// Event listener for the "Ploutos - Coulon" option
-document.querySelector('#dropdownMenuButton1').addEventListener('click', function() {
-    console.log('Dropdown button clicked');
-    addNewCard()
-});
 
 
+// ----------------- CLOSE BUTTON FOR HTML (to be deleted)----------------- //
 
-// ----------------- CLOSE BUTTON ----------------- //
 
 // Select all close buttons
 const closeButtons = document.querySelectorAll('.btn-close');
@@ -167,4 +165,10 @@ closeButtons.forEach(button => {
         }
     });
 });
+
+
+
+
+// ----------------- CHANGE FONTSIZE BUTTON ----------------- //
+
 

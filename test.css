@@ -1,19 +1,81 @@
+
+
+/* ============ BOUTON AJOUTER-TEXTE =========== */
+
+.dropdown {
+    position: relative; /* Ensure dropdown is positioned to use z-index */ 
+  }
+
+  .dropdown-menu {
+    background-color: rgb(253, 231, 231);
+}
+
+.dropdown-submenu {
+    position: relative;
+   }
+
+.dropdown-item.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* align text to the start */
+    padding-left: 1rem; /* or any appropriate value to create indentation */
+}
+
+.dropdown-submenu .dropdown-menu {
+top: 0;
+left: 100%;
+margin-top: -6px;
+margin-left: -1px;
+border-radius: 0 0.25rem 0.25rem 0;
+
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+display: block;
+}
+
+.dropdown-item:hover {
+    background-color: lightsalmon;
+    color: #fff;
+  }
+
+/* ============ BOUTON CODE COULEUR =========== */
+
+.offcanvas-body {
+    overflow-y: auto;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* ============ BOUTONS +/- =========== */
+
+
+.custom-btn-size {
+    width: 50px; /* Set the width as per your requirement */
+}
+
+
+
+
+
+/* ============ CARDS =========== */
+
+
 .card {
-    /* overflow-y: auto; */
-    border: 1px solid #ccc;
     border-radius: 5px;
     height: 77vh;
-    /* margin-top: 3px; */
-    /* margin-bottom:3px; */
 }
+
 
 .list-group.list-group-flush {
     overflow-y: auto;
 }
 
 
-.list-group-item.Vert.hover-effect {
-    background-color: green;
-    }
+.hover-effect {
+    background-color: #f0f0f0; /* Hover effect */
+  }
 
 
