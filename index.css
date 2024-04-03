@@ -40,7 +40,7 @@ display: block;
   }
 
 
-/* ==================================== BOUTON CODE COULEUR ==================================== */
+/* ==================================== BOUTON CODE COULEUR (OFFCANVAS) ==================================== */
 
 .offcanvas-header {
     border-bottom: 1px solid #ccc; /* You can adjust the color and thickness as needed */
@@ -80,7 +80,10 @@ display: block;
 
 
 .hover-effect {
-    background-color: #f0f0f0; /* Hover effect */
+    background-color: #fa2b2b; /* Hover effect */
   }
 
+.list-group-item.Vert.hover-effect {
+    background-color: #20865c;
+}
 

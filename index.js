@@ -7,10 +7,9 @@ function addNewCard() {
             }
             return response.json();
         })
-        
+
         .then(data => {
             // Accessing and logging the data to the console
-            console.log(data["Arund - Ploutos"]);
 
             const content = data["Arund - Ploutos"];
 
