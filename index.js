@@ -1,5 +1,37 @@
-// Function to add a new card
-function addNewCard() {
+
+
+
+
+// ----------------- DROPDOWN MENU ----------------- //
+
+// Get all second level dropdown items
+const secondLevelDropdownItems = document.querySelectorAll('.dropdown-menu > .dropdown-item > .dropdown-menu > .dropdown-item');
+
+// Loop through each second level dropdown item and attach click event listener
+secondLevelDropdownItems.forEach(item => {
+    item.addEventListener('click', function(event) {
+
+        // Check if the clicked element is a direct child of .dropdown-menu
+        if (this.parentNode.classList.contains('dropdown-menu')) {
+            // Get the parent dropdown submenu (Ploutos or Les Archanéens)
+            const piece = this.closest('.dropdown-menu').parentNode.getAttribute('id');
+
+            // Get the selected text (Coulon or Alfonsi)
+            const auteur = this.textContent.trim();
+
+            console.log(piece + "-" + auteur);
+
+
+            addNewCard(piece, auteur);
+        }
+    });
+});
+
+
+
+
+// ----------------- ADD A NEW CARD ----------------- //
+function addNewCard(piece, auteur) {
     fetch('content.json')
         .then(response => {
             if (!response.ok) {
@@ -9,19 +41,23 @@ function addNewCard() {
         })
 
         .then(data => {
-            // Accessing and logging the data to the console
+            
+            json_key = piece + "_" + auteur
 
-            const content = data["Arund - Ploutos"];
+            const content = data[json_key];
 
             // Create a new card element
             const newCard = document.createElement('div');
             newCard.classList.add('col-lg-3','col-md-4','col-sm-6', 'gx-1');
 
+
+            title = piece + " - " + auteur
+
             // Create card HTML content
             let cardHTML = `
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                            <h5 class="card-title">Title</h5>
+                            <h5 class="card-title">${title}</h5>
                             <button type="button" class="btn-close" aria-label="Close"></button>
                         </div>
                     <ul class="list-group list-group-flush">
@@ -157,7 +193,7 @@ function bindHoverEffects() {
     });
 }
 
-
+addNewCard("Ploutos","Coulon")
 
 
 

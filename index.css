@@ -80,10 +80,30 @@ display: block;
 
 
 .hover-effect {
-    background-color: #fa2b2b; /* Hover effect */
+    background-color: #f0f0f0; /* Hover effect */
   }
 
-.list-group-item.Vert.hover-effect {
-    background-color: #20865c;
+
+.list-group-item.Orange.hover-effect {
+    background-color: orange;
 }
 
+.list-group-item.Magenta.hover-effect {
+    background-color: #ff7fdf;
+}
+
+.list-group-item.Bleu.hover-effect {
+    background-color: #9dc6f1;
+}
+
+.list-group-item.Gris.hover-effect {
+    background-color: #7a7070;
+}
+
+.list-group-item.Rose.hover-effect {
+    background-color: #ffc5fc;
+}
+
+.list-group-item.Marron.hover-effect {
+    background-color: #c78c55;
+}
